@@ -226,10 +226,6 @@ export default function Page({ params }: { params: { name: string } }) {
                             <Markdown className={cn("w-full h-full ")}>{`${output}`}</Markdown>
                         </div>
                     </Card>
-                    {/* create a Link to redirect to /leaderboard */}
-                    <Link href="/Leaderboard">
-                        <Button>Go to Leaderboard</Button>
-                    </Link>
                 </div>
             )}
         </div>

@@ -1,17 +1,17 @@
 export const data = {
     "questions": [
       {
-        "question": "What is the primary purpose of Next.js in web development?",
+        "question": "How does a well-designed frontend development platform contribute to a positive user interface?",
         "options": [
-          "Handling server-side rendering",
+          "Handling client-side rendering",
           "Building user interfaces",
           "Managing database operations",
-          "Creating web servers and APIs"
+          "Creating frontend servers and APIs"
         ],
-        "correctOption": "Handling server-side rendering"
+        "correctOption": "Handling client-side rendering"
       },
       {
-        "question": "How can you create dynamic routes in Next.js?",
+        "question": "In terms of frontend development, what methods enhance the creation of dynamic routes for a more engaging journey on a website?",
         "options": [
           "By using inline styles",
           "By writing custom CSS files",
@@ -21,9 +21,9 @@ export const data = {
         "correctOption": "By using brackets [ ] in the pages directory"
       },
       {
-        "question": "In Next.js, what is the purpose of the 'getStaticProps' function?",
+        "question": "How can a frontend development framework improve the overall user interface by fetching data at build time for static site generation?",
         "options": [
-          "To provide server-side functionality",
+          "To provide client-side functionality",
           "To define the structure of React components",
           "To encapsulate database queries",
           "To fetch data at build time for static site generation"
@@ -31,7 +31,7 @@ export const data = {
         "correctOption": "To fetch data at build time for static site generation"
       },
       {
-        "question": "How does Next.js handle client-side navigation between pages?",
+        "question": "In the context of a smooth user interface, what role does client-side navigation play in improving the transition between pages?",
         "options": [
           "By using media queries in a separate CSS file",
           "By providing responsive utility classes",
@@ -41,27 +41,27 @@ export const data = {
         "correctOption": "By using the 'Link' component for client-side navigation"
       },
       {
-        "question": "What is the purpose of the 'getServerSideProps' function in Next.js?",
+        "question": "How does fetching data on each request for server-side rendering contribute to a positive user interface?",
         "options": [
           "To remove unused styles from the final production build",
           "To automatically add vendor prefixes to styles",
-          "To handle form submissions in Next.js",
+          "To handle form submissions in Azure",
           "To fetch data on each request for server-side rendering"
         ],
         "correctOption": "To fetch data on each request for server-side rendering"
       },
       {
-        "question": "How can you customize the default configuration in Next.js?",
+        "question": "In terms of user interface, how can customization of the default configuration improve the interaction with a frontend development platform?",
         "options": [
           "By directly modifying the core library files",
-          "By using a separate configuration file (next.config.js)",
+          "By using a separate configuration file (azure.config.js)",
           "By creating a custom webpack configuration",
           "By applying inline styles with the !important flag"
         ],
-        "correctOption": "By using a separate configuration file (next.config.js)"
+        "correctOption": "By using a separate configuration file (azure.config.js)"
       },
       {
-        "question": "What is the purpose of the 'getStaticPaths' function in Next.js?",
+        "question": "How does the generation of dynamic routes contribute to an enhanced user interface in frontend development?",
         "options": [
           "To define styles for elements in a specific state",
           "To handle server-side rendering events",
@@ -71,27 +71,27 @@ export const data = {
         "correctOption": "To generate dynamic routes for static site generation"
       },
       {
-        "question": "In Next.js, what is the 'API routes' feature used for?",
+        "question": "In the context of user interface, how does the 'API routes' feature contribute to the seamless functioning of a web application?",
         "options": [
           "To handle dark mode in React components",
-          "To define global styles for a Next.js application",
+          "To define global styles for a web application",
           "To add shadows and depth to elements",
           "To create serverless functions for backend functionality"
         ],
         "correctOption": "To create serverless functions for backend functionality"
       },
       {
-        "question": "How can you deploy a Next.js application?",
+        "question": "For a positive user interface, what is a recommended approach for deploying a frontend application effectively?",
         "options": [
           "By importing external CSS files",
-          "By using the 'next-plugins' npm package",
-          "By extending the core Next.js library",
+          "By using the 'azure-plugins' npm package",
+          "By extending the core frontend development library",
           "By deploying to platforms like Vercel, Netlify, or AWS"
         ],
         "correctOption": "By deploying to platforms like Vercel, Netlify, or AWS"
       },
       {
-        "question": "What is the purpose of the '_app.js' file in Next.js?",
+        "question": "In the realm of user interface, how does the structure of the '_app.js' file impact the consistency of layout for web pages?",
         "options": [
           "To apply styles inline within HTML files",
           "To include external JavaScript files",

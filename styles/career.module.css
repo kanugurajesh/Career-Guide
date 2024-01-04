@@ -43,3 +43,12 @@
     font-size: 1rem;
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    .career {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}

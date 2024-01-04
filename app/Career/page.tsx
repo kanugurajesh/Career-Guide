@@ -54,8 +54,16 @@ export default function Career() {
         router.push(`/Career/GetGuidance/${selectedCareer}`)
     }
 
+    const handleEvaluate = () => {
+        if(!selectedCareer || selectedCareer === 'Please select a career') {
+            toast.error('Please select a career')
+            return;
+        }
+        router.push(`/Courses/${selectedCareer}`)
+    }
+
     return (
-        <main className="p-10 flex mt-10">
+        <main className={`p-10 flex mt-10 ${styles.career} w-full`}>
             <Toaster />
             <div className={`${styles.imageContainer}`}>
                 <Image src="/icons/uiux.png" alt="UserExperience" width={80} height={80} onClick={handleClick} defaultValue="ux" />
@@ -80,7 +88,7 @@ export default function Career() {
                 <p className={`${styles.p}`}>{careerDescription}</p>
                 <div className="mt-5 flex flex-col gap-3">
                     <Button onClick={handleGetGuidance} className={cn("w-[200px]")}>Get guidance</Button>
-                    <Button className={cn("w-[200px]")}>Evaluate</Button>
+                    <Button onClick={handleEvaluate} className={cn("w-[200px]")}>Evaluate</Button>
                 </div>
             </div>
         </main>
