@@ -21,7 +21,7 @@ export default function HomeLayout({
     return (
         <div className={`${showMenu ? "overflow-hidden h-screen" : ''}`}>
             <nav className='relative'>
-                <div className='flex p-10 items-center justify-between font-bold'>
+                <div className='flex p-10 items-center justify-between font-bold pb-40'>
                     <div className='flex items-center gap-3'>
                         <Link href="/" className='flex items-center '>
                             <Image src="/logo.png" alt="Logo" width={35} height={35} className='mr-[-2px]' />

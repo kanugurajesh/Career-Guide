@@ -2,9 +2,9 @@
 
 import Head from "next/head";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import "@uploadthing/react/styles.css";
 import { UploadButton } from "@/utils/uploadthing";
+import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
@@ -13,12 +13,12 @@ export default function Home() {
     const [gender, setGender] = useState<string>("");
     const [userPrompt, setUserPrompt] = useState<string>("");
     const [selectedFile, setSelectedFile] = useState<string>();
-    const router = useRouter();
+    const [imageURL, setImageURL] = useState<string>("");
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         try {
-            
+
             if (!selectedFile) {
                 return toast.error("Please upload a picture");
             }
@@ -45,7 +45,9 @@ export default function Home() {
                 return toast.error(response.error);
             }
 
-            console.log({ response });
+            // @ts-ignore
+            // console.log({ response.response.imageURl });
+            setImageURL(response.imageURl);
         } catch (err) {
             console.error({ err });
         }
@@ -64,64 +66,72 @@ export default function Home() {
                 </p>
             </header>
 
-            <form
-                method="POST"
-                className="flex w-full flex-col md:w-[60%]"
-                onSubmit={(e) => handleSubmit(e)}
-            >
-                <label htmlFor="email">Email Address</label>
-                <input
-                    type="email"
-                    required
-                    className="mb-3 border-[1px] px-4 py-2"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
+            {imageURL && (
+                <Image src={imageURL} width={500} height={500} alt="avatar" />
+            )}
 
-                <label htmlFor="gender">Gender</label>
-                <select
-                    className="mb-4 rounded border-[1px] px-4 py-3"
-                    name="gender"
-                    id="gender"
-                    value={gender}
-                    onChange={(e) => setGender(e.target.value)}
-                    required
-                >
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                <UploadButton
-                    endpoint="imageUploader"
-                    onClientUploadComplete={(res) => {
-                        // Do something with the response.
-                        setSelectedFile(res[0].url);
-                        toast.success("Image uploaded successfully!");
-                    }}
-                    onUploadError={(error: Error) => {
-                        toast.error(`ERROR! ${error.message}`);
-                    }}
-                />
-                <label htmlFor="prompt">
-                    Add custom prompt for your avatar
-                    <span className="opacity-60">(optional)</span>
-                </label>
-                <textarea
-                    rows={4}
-                    className="w-full border-[1px] p-3"
-                    name="prompt"
-                    id="prompt"
-                    value={userPrompt}
-                    placeholder="Copy image prompts from https://lexica.art"
-                    onChange={(e) => setUserPrompt(e.target.value)}
-                />
-                <button
-                    type="submit"
-                    className="mt-5 rounded bg-blue-500 px-6 py-4 text-lg text-white hover:bg-blue-700"
-                >
-                    Generate Avatar
-                </button>
-            </form>
+            {!imageURL && (
+                <>
+                    <form
+                        method="POST"
+                        className="flex w-full flex-col md:w-[60%]"
+                        onSubmit={(e) => handleSubmit(e)}
+                    >
+                        <label htmlFor="email">Email Address</label>
+                        <input
+                            type="email"
+                            required
+                            className="mb-3 border-[1px] px-4 py-2"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+
+                        <label htmlFor="gender">Gender</label>
+                        <select
+                            className="mb-4 rounded border-[1px] px-4 py-3"
+                            name="gender"
+                            id="gender"
+                            value={gender}
+                            onChange={(e) => setGender(e.target.value)}
+                            required
+                        >
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <UploadButton
+                            endpoint="imageUploader"
+                            onClientUploadComplete={(res) => {
+                                // Do something with the response.
+                                setSelectedFile(res[0].url);
+                                toast.success("Image uploaded successfully!");
+                            }}
+                            onUploadError={(error: Error) => {
+                                toast.error(`ERROR! ${error.message}`);
+                            }}
+                        />
+                        <label htmlFor="prompt">
+                            Add custom prompt for your avatar
+                            <span className="opacity-60">(optional)</span>
+                        </label>
+                        <textarea
+                            rows={4}
+                            className="w-full border-[1px] p-3"
+                            name="prompt"
+                            id="prompt"
+                            value={userPrompt}
+                            placeholder="Copy image prompts from https://lexica.art"
+                            onChange={(e) => setUserPrompt(e.target.value)}
+                        />
+                        <button
+                            type="submit"
+                            className="mt-5 rounded bg-blue-500 px-6 py-4 text-lg text-white hover:bg-blue-700"
+                        >
+                            Generate Avatar
+                        </button>
+                    </form>
+                </>
+            )}
         </main>
     );
 }

@@ -7,7 +7,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export default function Home() {
     return (
-        <main className="px-10 flex justify-around items-center h-screen">
+        <main className="px-10 flex justify-around items-center">
             <div className="flex flex-col gap-6">
                 <h1 className="font-black text-6xl">
                     <span style={{ color: 'black', fontWeight: 'bold'}}>
