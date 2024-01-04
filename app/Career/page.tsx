@@ -10,12 +10,24 @@ import toast, { Toaster } from "react-hot-toast";
 export default function Career() {
 
     const [selectedCareer, setSelectedCareer] = useState('Please select a career')
+    const [careerDescription, setCareerDescription] = useState('')
 
     const handleClick = (e: any) => {
 
-        const customValue = e.target.getAttribute('alt')
+        const customValue = e.target.getAttribute('alt') as string;
 
         toast.success(`You selected ${customValue}`)
+
+        const readFile = async (name: string) => {
+            const markdown = await import(`@/data/${name}.d.ts`);
+            const data = markdown.data;
+            setCareerDescription(data[customValue])
+            return markdown.data;
+        }
+
+        readFile("career")
+
+        console.log(careerDescription)
 
         setSelectedCareer(customValue)
 
@@ -54,6 +66,7 @@ export default function Career() {
             </div>
             <div className="flex items-center justify-center">
                 <h1>{selectedCareer}</h1>
+                <p>{careerDescription}</p>
                 <Button variant="outline" className={cn("w-[40px] p-1")}>
                     hello
                 </Button>
