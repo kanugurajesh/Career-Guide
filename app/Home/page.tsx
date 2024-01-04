@@ -12,7 +12,7 @@ export default function Home() {
                 <h1 className="font-black text-6xl">
                     <span style={{ color: 'black', fontWeight: 'bold'}}>
                         <Typewriter
-                            words={['What is Swap AI', 'AI Image Generator', 'Swap AI']}
+                            words={['What is Career Aid', 'AI Based guidance', '']}
                             loop={1000}
                             cursor
                             cursorStyle='_'
@@ -28,7 +28,7 @@ export default function Home() {
                 </Link>
             </div>
             <div>
-                <Image src="/image-generator.png" alt="Swap ai" width={400} height={400} />
+                <Image src="/careerup.png" alt="Swap ai" width={400} height={400} />
             </div>
         </main>
     );
