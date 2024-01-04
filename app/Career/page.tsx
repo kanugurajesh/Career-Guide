@@ -3,8 +3,7 @@
 import Image from "next/image"
 import styles from '@/styles/career.module.css'
 import { Button } from "@/components/ui/button";
-import { buttonVariants } from "@/components/ui/button"
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils"
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -13,6 +12,8 @@ export default function Career() {
 
     const [selectedCareer, setSelectedCareer] = useState('Please select a career')
     const [careerDescription, setCareerDescription] = useState('')
+
+    const router = useRouter();
 
     const handleClick = (e: any) => {
 
@@ -45,11 +46,19 @@ export default function Career() {
         e.target.classList.add(`${styles.imageSelected}`);
     }
 
+    const handleGetGuidance = () => {
+        if(!selectedCareer || selectedCareer === 'Please select a career') {
+            toast.error('Please select a career')
+            return;
+        }
+        router.push(`/Career/GetGuidance/${selectedCareer}`)
+    }
+
     return (
         <main className="p-10 flex mt-10">
             <Toaster />
             <div className={`${styles.imageContainer}`}>
-                <Image src="/icons/ux.png" alt="Ux" width={80} height={80} onClick={handleClick} defaultValue="ux" />
+                <Image src="/icons/uiux.png" alt="Uiux" width={80} height={80} onClick={handleClick} defaultValue="ux" />
                 <Image src="/icons/ui-design.png" alt="Frontend" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/backend.png" alt="Backend" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/database.png" alt="Database" width={80} height={80} onClick={handleClick} />
@@ -67,10 +76,12 @@ export default function Career() {
                 <Image src="/icons/blockchain.png" alt="Blockchain" width={80} height={80} onClick={handleClick} />
             </div>
             <div className={`${styles.imageContent}`}>
-                <h1>{selectedCareer}</h1>
-                <p>{careerDescription}</p>
-                <Button className={cn("w-[200px]")}>Get guidance</Button>
-                <Button className={cn("w-[200px]")}>Evaluate</Button>
+                <h1 className={`${styles.h1}`}>{selectedCareer}</h1>
+                <p className={`${styles.p}`}>{careerDescription}</p>
+                <div className="mt-5 flex flex-col gap-3">
+                    <Button onClick={handleGetGuidance} className={cn("w-[200px]")}>Get guidance</Button>
+                    <Button className={cn("w-[200px]")}>Evaluate</Button>
+                </div>
             </div>
         </main>
     )

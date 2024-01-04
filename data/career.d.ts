@@ -1,5 +1,5 @@
 export const data = {
-    "Ux":"A UX, or user experience, is simply everything a user feels and thinks about when using a product or service.",
+    "Uiux":"A UX, or user experience, is simply everything a user feels and thinks about when using a product or service.",
     "Frontend": "Frontend is the user-facing part of software or a website, involving design and interface elements.",
     "Backend": "Backend is the server-side of software or a website, involving databases and server logic.",
     "Fullstack": "Fullstack is the combination of frontend and backend, involving both design and server logic.",

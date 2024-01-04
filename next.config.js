@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true,
     images: {
-        domains: ['codehelp-portfolio-website.netlify.app','drive.google.com']
+        domains: ['localhost', 'res.cloudinary.com', "replicate.delivery"],
     }
 }
 
