@@ -64,13 +64,13 @@ export default function Career() {
                 <Image src="/icons/open-source.png" alt="Opensource" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/blockchain.png" alt="Blockchain" width={80} height={80} onClick={handleClick} />
             </div>
-            <div className="flex items-center justify-center">
+            <div className={`${styles.imageContent}`}>
                 <h1>{selectedCareer}</h1>
                 <p>{careerDescription}</p>
-                <Button variant="outline" className={cn("w-[40px] p-1")}>
+                <Button variant="outline" className={cn("w-[200px] p-1")}>
                     hello
                 </Button>
-                <Button variant="outline" className={cn("w-[40px] p-1")}>
+                <Button variant="outline" className={cn("w-[200px] p-1")}>
                     hello
                 </Button>
             </div>
