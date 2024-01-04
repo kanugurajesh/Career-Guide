@@ -67,3 +67,28 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 ![Screenshot 2024-01-05 050901](https://github.com/kanugurajesh/Career-Guide/assets/120458029/476f09af-1f67-4121-998f-4d4c742a20a1)
 
 ![Screenshot 2024-01-05 050913](https://github.com/kanugurajesh/Career-Guide/assets/120458029/eee7478f-85cd-44a6-b86a-a97e8850956d)
+
+## Contribution Guidelines
+
+We welcome contributions to enhance and improve the llm app. If you have ideas or improvements, feel free to submit a pull request following our contribution guidelines.
+
+## Feedback and Issues
+
+If you encounter any issues or have feedback, please open an issue on our [GitHub repository](https://github.com/kanugurajesh/Student-LMS/issues). We appreciate your input and strive to make our system better with each update.
+
+## Tech Stack
+
+- Next.js
+- Tailwindcss
+- Gemini Pro
+- Rive
+- Typescript
+- API
+- Replicate
+- Markdown
+- Vercel
+- Text to Image generation API
+
+## Authors
+
+- [@kanugurajesh](https://github.com/kanugurajesh)
