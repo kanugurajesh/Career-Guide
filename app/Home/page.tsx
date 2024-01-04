@@ -1,105 +1,35 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import styles from "@/styles/home.module.css"
-import { cn } from "@/lib/utils"
-import Link from "next/link"
-import { UserButton } from "@clerk/nextjs"
-import toast, {Toaster} from "react-hot-toast"
+import Link from "next/link";
+import Image from "next/image";
+import styles from '@/styles/Root.module.css'
+import { Typewriter } from 'react-simple-typewriter'
 
 export default function Home() {
-
     return (
-        <div className={styles.container}>
-            <Toaster />
-            <div className={styles.navbar}>
-                <div className={styles.logobar}>
-                    <Image src="/logo.png" width={30} height={30} alt="logo" />
-                    <div className={styles.logoText}>raphifyEd</div>
-                </div>
-                <div className={`${styles.navitems}`}>
-                    <Link href="/Imagen" className={styles.navlist}>
-                        Imagen
-                    </Link>
-                    <Link href="/Chat" className={styles.navlist}>
-                        Chat
-                    </Link>
-                    <Link href="/Home" className={styles.navlist} onClick={() => toast.success("select a logo to begin the course")}>
-                        Courses
-                    </Link>
-                    <Link href="https://kanugurajesh.github.io" className={styles.navlist}>
-                        Blog
-                    </Link>
-                    <UserButton afterSignOutUrl="/">
-                        Sign out
-                    </UserButton>
-                </div>
+        <main className="p-10 flex justify-around items-center h-screen">
+            <div className="flex flex-col gap-6">
+                <h1 className="font-black text-6xl">
+                    <span style={{ color: 'black', fontWeight: 'bold'}}>
+                        <Typewriter
+                            words={['What is Swap AI', 'AI Image Generator', 'Swap AI']}
+                            loop={1000}
+                            cursor
+                            cursorStyle='_'
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </span>
+                </h1>
+                <p className="text-xl">Swap ai is a generative ai tool to swap your images with your fantasy avatar</p>
+                <Link href="/Home" className={`font-bold text-xl max-w-max py-3 px-10 rounded-sm transition-all ease-in-out duration-400 ${styles.button} relative`}>
+                    <p className={styles.p}>Get Started</p>
+                </Link>
             </div>
-            <div className={`${styles.herosection} mt-20`}>
-                <div className={styles.herocontent}>
-                    <div className={styles.heroheading}><h1 className={styles.h1}>What is GraphifyEd</h1>
-
-                    </div>
-                    <div className={styles.wrapper}>
-                        <p className={`${styles.heroheading} ${styles.p}`}>
-                            GraphifyEd is a unique student learning management system which aims at making learning as addictive as gaming. Start your journey with GraphifyEd and earn points, badges and rewards as you learn.
-                        </p>
-                        <Link href="/Courses/html5">
-                            <button className={styles.btnpink}>Select Logo and Learn</button>
-                        </Link>
-                    </div>
-                </div>
-                <div className={cn(`flex flex-wrap w-[500px] gap-6 p-2 ${styles.heroimg}`)}>
-                    <Link href="/Courses/html5">
-                        <Image src="/icons/html5.svg" width={90} height={90} alt="html5" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/css3">
-                        <Image src="/icons/css3.svg" width={90} height={90} alt="css3" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/javascript">
-                        <Image src="/icons/javascript.svg" width={90} height={90} alt="javascript" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/typescript">
-                        <Image src="/icons/typescript.svg" width={90} height={90} alt="typescript" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/mongodb">
-                        <Image src="/icons/mongodb.svg" width={90} height={90} alt="mongodb" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/reactjs">
-                        <Image src="/icons/reactjs.svg" width={90} height={90} alt="reactjs" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/express">
-                        <Image src="/icons/express.svg" width={90} height={90} alt="express" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/tailwindcss">
-                        <Image src="/icons/tailwindcss.svg" width={90} height={90} alt="tailwindcss" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/nextjs">                        
-                        <Image src="/icons/nextjs.svg" width={90} height={90} alt="nextjs" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/azure">
-                        <Image src="/icons/azure.svg" width={90} height={90} alt="azure" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/devops">
-                        <Image src="/icons/devops.svg" width={90} height={90} alt="devops" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/github">
-                        <Image src="/icons/github.svg" width={90} height={90} alt="github" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/git">
-                        <Image src="/icons/git.svg" width={90} height={90} alt="git" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/docker">
-                        <Image src="/icons/docker.svg" width={90} height={90} alt="docker" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/graphql">
-                        <Image src="/icons/graphql.svg" width={90} height={90} alt="graphql" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                    <Link href="/Courses/kubernetes">
-                        <Image src="/icons/kubernetes.svg" width={90} height={90} alt="graphql" className="transition ease-in-out duration-500 hover:scale-110" />
-                    </Link>
-                </div>
+            <div>
+                <Image src="/image-generator.png" alt="Swap ai" width={400} height={400} />
             </div>
-        </div>
-    )
+        </main>
+    );
 }

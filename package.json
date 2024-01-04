@@ -18,6 +18,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toggle": "^1.0.3",
     "@rive-app/react-canvas": "^3.0.57",
+    "@uploadthing/react": "^6.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.295.0",
@@ -28,6 +29,7 @@
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
     "react-markdown": "^9.0.1",
+    "react-simple-typewriter": "^5.0.1",
     "rive-react": "^4.6.2",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7"

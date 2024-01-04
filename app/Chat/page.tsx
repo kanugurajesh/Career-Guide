@@ -123,7 +123,7 @@ export default function Home() {
       <Toaster />
       <div className="flex gap-2 items-center mb-5">
         <MessageCircleCode size="64" />
-        <span className="text-3xl font-bold">Chaty</span>
+        <span className="text-3xl font-bold">Career-Bot</span>
       </div>
       <div className="flex gap-2 items-center">
         <div className="relative">
