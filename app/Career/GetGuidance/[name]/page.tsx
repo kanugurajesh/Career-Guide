@@ -9,8 +9,6 @@ import React from 'react'
 import { Button } from "@/components/ui/button";
 import styles from '@/styles/styles.module.css'
 import "@/styles/LoginFormComponent.css";
-import Link from "next/link";
-import { on } from "events";
 
 export default function Page({ params }: { params: { name: string } }) {
 
@@ -51,7 +49,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                userPrompt: `hello`,
+                userPrompt: `can you tell me what are the capabilities I need to start a career in ${name} and what are the career options available in ${name}`,
             }),
         });
 
@@ -80,7 +78,7 @@ export default function Page({ params }: { params: { name: string } }) {
             <div className='flex flex-col items-center h-screen gap-6'>
                 <h1 className='text-4xl font-extrabold mt-1'>{name}</h1>
                 {image && <Image src={image} alt="image" width={300} height={300} />}
-                <h1 className='text-1xl font-bold mt-1'>Based on you performance we are creating a learning path to learn <span className="text-red-500">{name}</span></h1>
+                <h1 className='text-1xl font-bold mt-1'>Creating a response for the capabilities required and career options in <span className="text-red-500">{name}</span></h1>
                 <Card className={cn("p-5 whitespace-normal min-w-[320px] sm:w-[500px] md:min-w-[600px]")}>
                     <div className={styles.textwrapper}>
                         <Markdown className={cn("w-full h-full ")}>{`${output}`}</Markdown>

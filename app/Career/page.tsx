@@ -58,22 +58,22 @@ export default function Career() {
         <main className="p-10 flex mt-10">
             <Toaster />
             <div className={`${styles.imageContainer}`}>
-                <Image src="/icons/uiux.png" alt="Uiux" width={80} height={80} onClick={handleClick} defaultValue="ux" />
-                <Image src="/icons/ui-design.png" alt="Frontend" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/backend.png" alt="Backend" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/database.png" alt="Database" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/git.png" alt="Git" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/fullstack.png" alt="Fullstack" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/server.png" alt="Server" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/devops.png" alt="Devops" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/uiux.png" alt="UserExperience" width={80} height={80} onClick={handleClick} defaultValue="ux" />
+                <Image src="/icons/ui-design.png" alt="FrontendDevelopment" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/backend.png" alt="BackendDevelopment" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/database.png" alt="DatabaseEngineering" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/git.png" alt="GitVersionControl" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/fullstack.png" alt="FullstackDevelopment" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/server.png" alt="CloudPlatform" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/devops.png" alt="DeveloperOperations" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/cyber-security.png" alt="Cybersecurity" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/analysis.png" alt="Analysis" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/data-science.png" alt="Datascience" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/ai.png" alt="Ai" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/testing.png" alt="Testing" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/analysis.png" alt="DataAnalysis" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/data-science.png" alt="DataScience" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/ai.png" alt="ArtificialIntelligence" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/testing.png" alt="SoftwareTesting" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/hacker.png" alt="Hacking" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/open-source.png" alt="Opensource" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/blockchain.png" alt="Blockchain" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/blockchain.png" alt="BlockchainDevelopment" width={80} height={80} onClick={handleClick} />
             </div>
             <div className={`${styles.imageContent}`}>
                 <h1 className={`${styles.h1}`}>{selectedCareer}</h1>
