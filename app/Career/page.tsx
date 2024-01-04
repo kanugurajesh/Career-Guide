@@ -3,6 +3,8 @@
 import Image from "next/image"
 import styles from '@/styles/career.module.css'
 import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button"
+import Link from "next/link";
 import { cn } from "@/lib/utils"
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -67,12 +69,8 @@ export default function Career() {
             <div className={`${styles.imageContent}`}>
                 <h1>{selectedCareer}</h1>
                 <p>{careerDescription}</p>
-                <Button variant="outline" className={cn("w-[200px] p-1")}>
-                    hello
-                </Button>
-                <Button variant="outline" className={cn("w-[200px] p-1")}>
-                    hello
-                </Button>
+                <Button className={cn("w-[200px]")}>Get guidance</Button>
+                <Button className={cn("w-[200px]")}>Evaluate</Button>
             </div>
         </main>
     )
