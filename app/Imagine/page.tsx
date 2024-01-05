@@ -44,10 +44,29 @@ export default function Home() {
             if (response.error) {
                 return toast.error(response.error);
             }
-
             // @ts-ignore
             // console.log({ response.response.imageURl });
             setImageURL(response.imageURl);
+
+            const emailSend = await fetch("/api/send", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ 
+                    sendTo: email,
+                    imageUrl: response.imageURl,
+                 }),
+            });
+
+            const emailResponse = await emailSend.json();
+
+            // if (emailResponse.error) {
+            //     return toast.error(emailResponse.error);
+            // }
+
+            toast.success("Email sent successfully!");
+
         } catch (err) {
             console.error({ err });
         }
