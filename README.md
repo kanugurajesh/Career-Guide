@@ -91,7 +91,9 @@ If you encounter any issues or have feedback, please open an issue on our [GitHu
 - Replicate
 - Markdown
 - Vercel
-- Text to Image generation API
+- Stable Diffusion
+- Resend
+- Face Swap LLM
 
 ## Authors
 
