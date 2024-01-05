@@ -57,7 +57,8 @@ export default function HomeLayout({
                     </div>
                 </div>
             </nav>
-            {window.innerWidth > 750 || !showMenu ? children : ''}
+            {/* {window.innerWidth > 750 || !showMenu ? children : ''} */}
+            {!showMenu ? children : ''}
         </div>
     )
 }

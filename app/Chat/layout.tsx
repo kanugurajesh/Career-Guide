@@ -67,7 +67,7 @@ export default function RootLayout({
               </div>
             </div>
           </nav>
-          {window.innerWidth > 750 || !showMenu ? (
+          {!showMenu ? (
             <>
               <div className="absolute top-21 right-10">
                 <ModeToggle />
