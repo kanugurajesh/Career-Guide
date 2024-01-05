@@ -1,36 +1,22 @@
+# Career Aid
 
-# Student LMS Portal Gamification
 #### 🌟 star this repo if you like it
 
 <div align=center>
-  <img src="https://github.com/kanugurajesh/Student-LMS/assets/120458029/c67c80d0-c9aa-4e49-8a8f-5956bb6e92ec" alt="interface" width=200 height=200 />
+  <img src="https://github.com/kanugurajesh/Career-Guide/assets/120458029/17388695-02cb-4463-ab0b-44b50b4dfef2" width=150 height=150>
 </div>
 
 ## Problem Statement
-
-<b>Challenge:</b> Design and implement a gamified learning management system (LMS) portal for students. The solution should incorporate points, badges, leaderboards, and other interactive elements to motivate students, track progress, and make learning more engaging
-
-<b>Bonus Point:</b> Develop personalized learning paths based on individual student performance and learning styles.
+Making career choices and AI based counselling accessible to every child at secondary level along with aptitude tests and detailed career paths.
 
 ## Solution Statement
-
-🚀 Welcome to an innovative learning platform designed to make education as exciting as a game! 🎮
-
-Explore an interactive world filled with dynamic elements that turn learning into a thrilling adventure. 🌟 Earn scores, climb the leaderboard, unlock medals, and collect badges to showcase your achievements. 🏆 The journey is not just about education; it's about creating a game-like environment where learning becomes addictive!
-
-Have a question? 🤔 Our friendly chat assistant is here 24/7 to provide instant answers and guidance. 🤖💬 No more struggling alone; assistance is just a message away!
-
-Unleash your creativity with "Imagens," a magical text-to-image converter that transforms ideas into vivid pictures. 🎨✨ Watch your imagination come to life and enhance your learning experience in a visually captivating way.
-
-But that's not all – we believe in personalized learning! 🎓 Assessments are conducted to understand your strengths and areas for growth. Based on your unique capabilities, we tailor personalized learning paths to ensure you grasp concepts at your own pace. 🌐📚
+A web based AI integrated platform to provide career counselling  and help students evaluate their skills and then choose a path
 
 ## Project Setup
 
-### Local Setup
-
 ```bash
-git clone https://github.com/kanugurajesh/Student-LMS.git
-cd Student-LMS
+fork the repository
+clone the repo from you github
 cp .env.example .env.local
 # Add the required api keys
 npm install
@@ -48,37 +34,39 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 # The application will run on http://localhost:3000
 ```
 
-## Screenshots
+![Screenshot 2024-01-05 050409](https://github.com/kanugurajesh/Career-Guide/assets/120458029/bf3c4afc-7515-4725-9796-8cf737ba4a86)
 
-![Screenshot 2023-12-17 213140](https://github.com/kanugurajesh/Student-LMS/assets/120458029/a29ab926-79ae-49dc-a681-7c64f931259b)
+![Screenshot 2024-01-05 050438](https://github.com/kanugurajesh/Career-Guide/assets/120458029/5243d8b0-4f9d-47d8-a36f-7f467ebb6dfb)
 
-![Screenshot 2023-12-17 214251](https://github.com/kanugurajesh/Student-LMS/assets/120458029/5a113f12-3f23-464f-9b8c-f06f6c831239)
+![Screenshot 2024-01-05 050452](https://github.com/kanugurajesh/Career-Guide/assets/120458029/fca09d0c-96b2-4247-85dc-1b3bbdfde4aa)
 
-![Screenshot 2023-12-17 214258](https://github.com/kanugurajesh/Student-LMS/assets/120458029/7c11cc8b-d69c-461a-aba3-c3f3de50048a)
+![Screenshot 2024-01-05 050526](https://github.com/kanugurajesh/Career-Guide/assets/120458029/75b72f2b-9cae-490c-bfd4-df52769581b6)
 
-![Screenshot 2023-12-17 214311](https://github.com/kanugurajesh/Student-LMS/assets/120458029/043ad4fb-1c91-45c9-803e-b880889e209b)
+![Screenshot 2024-01-05 050538](https://github.com/kanugurajesh/Career-Guide/assets/120458029/c64f9cd3-0b3f-4c90-b6df-d30b79bd75da)
 
-![Screenshot 2023-12-17 214318](https://github.com/kanugurajesh/Student-LMS/assets/120458029/5891cacc-93ab-4726-87ce-571a654a7dc7)
+![Screenshot 2024-01-05 050558](https://github.com/kanugurajesh/Career-Guide/assets/120458029/401f429f-6209-46d8-a2bd-482a0b94ad99)
 
-![Screenshot 2023-12-17 214327](https://github.com/kanugurajesh/Student-LMS/assets/120458029/5d7cc20a-5490-464f-9168-0af255dbe4b1)
+![Screenshot 2024-01-05 050629](https://github.com/kanugurajesh/Career-Guide/assets/120458029/20a20f54-8d4d-4e3a-8cf6-405c6e7d5d17)
 
-![Screenshot 2023-12-17 214347](https://github.com/kanugurajesh/Student-LMS/assets/120458029/c5281f52-b7bc-4465-a3dd-e56882e29880)
+![Screenshot 2024-01-05 050723](https://github.com/kanugurajesh/Career-Guide/assets/120458029/6527c237-927e-46c2-8fe9-fd3a1d2bd24d)
 
-![Screenshot 2023-12-17 214415](https://github.com/kanugurajesh/Student-LMS/assets/120458029/e30f17c3-12b5-4998-8b80-feec537baf1c)
+![Screenshot 2024-01-05 050732](https://github.com/kanugurajesh/Career-Guide/assets/120458029/5f53a76e-56ba-4564-8968-81287fde8c03)
 
-![Screenshot 2023-12-17 214443](https://github.com/kanugurajesh/Student-LMS/assets/120458029/57f8bc2b-272e-444b-9095-c4bfc47b7eee)
+![Screenshot 2024-01-05 050747](https://github.com/kanugurajesh/Career-Guide/assets/120458029/2a8ae8b5-6e68-4aad-86e5-e939001ecae1)
 
-![Screenshot 2023-12-17 214456](https://github.com/kanugurajesh/Student-LMS/assets/120458029/6fd51459-ed5a-458d-88de-d9c932209711)
+![Screenshot 2024-01-05 050759](https://github.com/kanugurajesh/Career-Guide/assets/120458029/9f1360c8-448c-464b-b0cd-582b520e3072)
 
-![Screenshot 2023-12-17 222624](https://github.com/kanugurajesh/Student-LMS/assets/120458029/2f62fc69-d0ee-4c14-b584-b69173636c5a)
+![Screenshot 2024-01-05 050808](https://github.com/kanugurajesh/Career-Guide/assets/120458029/65c0af96-2d3b-4b12-b32d-2855c65d23d9)
 
-![Screenshot 2023-12-17 223037](https://github.com/kanugurajesh/Student-LMS/assets/120458029/d7df65f2-ecb0-4396-a232-24d7d988109c)
+![Screenshot 2024-01-05 050837](https://github.com/kanugurajesh/Career-Guide/assets/120458029/557e0b90-fdbe-4826-8144-5c4b98dd9a62)
 
-![Screenshot 2023-12-17 223051](https://github.com/kanugurajesh/Student-LMS/assets/120458029/2c9e168d-2375-471b-af0a-f898a00080f9)
+![Screenshot 2024-01-05 050846](https://github.com/kanugurajesh/Career-Guide/assets/120458029/0298d1ab-c821-4707-9c4b-1954f5d6cb06)
 
-## Demo
-### Click on the below image to see the video
-[![Study LMS](https://github.com/kanugurajesh/Student-LMS/assets/120458029/8af3e8f9-dd34-4b17-88ca-1366d70af672)](https://youtu.be/c_jkQChl06k?feature=shared)
+![Screenshot 2024-01-05 050850](https://github.com/kanugurajesh/Career-Guide/assets/120458029/83a1fdf6-2044-4602-8611-56f16b0acf57)
+
+![Screenshot 2024-01-05 050901](https://github.com/kanugurajesh/Career-Guide/assets/120458029/476f09af-1f67-4121-998f-4d4c742a20a1)
+
+![Screenshot 2024-01-05 050913](https://github.com/kanugurajesh/Career-Guide/assets/120458029/eee7478f-85cd-44a6-b86a-a97e8850956d)
 
 ## Contribution Guidelines
 
@@ -93,6 +81,10 @@ If you encounter any issues or have feedback, please open an issue on our [GitHu
 - Next.js
 - Tailwindcss
 - Gemini Pro
+- Rive
+- Typescript
+- API
+- Replicate
 - Markdown
 - Vercel
 - Text to Image generation API
@@ -100,8 +92,3 @@ If you encounter any issues or have feedback, please open an issue on our [GitHu
 ## Authors
 
 - [@kanugurajesh](https://github.com/kanugurajesh)
-- [@Shra1V32](https://github.com/Shra1V32)
-- [@YashwanthKumar02](https://github.com/YashwanthKumar02)
-
-### More Details
-<b>docosauras documentation :-</b> https://shra1v32.github.io/docusaurus-blogger/docs/GraphifyEd/intro
