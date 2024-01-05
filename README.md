@@ -68,6 +68,10 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-05 050913](https://github.com/kanugurajesh/Career-Guide/assets/120458029/eee7478f-85cd-44a6-b86a-a97e8850956d)
 
+## Demo
+### Click on the below image to see the video
+[![Career Aid](https://github.com/kanugurajesh/Student-LMS/assets/120458029/a29ab926-79ae-49dc-a681-7c64f931259b)](https://youtu.be/0xA9cpPkJ70)
+
 ## Contribution Guidelines
 
 We welcome contributions to enhance and improve the llm app. If you have ideas or improvements, feel free to submit a pull request following our contribution guidelines.
