@@ -35,6 +35,7 @@ export default function Contact() {
   };
 
   const handleSubmit = async () => {
+    
     if (validateForm()) {
       try {
         const response = await fetch("/api/contact", {
