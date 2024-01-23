@@ -60,6 +60,19 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-05 050837](https://github.com/kanugurajesh/Career-Guide/assets/120458029/557e0b90-fdbe-4826-8144-5c4b98dd9a62)
 
+<p>The following are the images related to the above imagine yourself app</p>
+
+1. The first image below is the resposne from the web when the image 4 and prompt which gives the image 5
+   
+```bash
+realistic, man, waist-up, tall, broad-shouldered, 35 years, haunted, tough, clean-shaven, realistic dark blond hair, tired, focused realistic light gray eyes, solid black background, bodyguard, wearing gray T-shirt, no pockets
+```
+
+2. The 2 image shows the gmail we get when email receive is enabled in the app and image is also sent
+
+3. The 3rd image is the image generated
+
+
 <table>
   <tr>
     <td valign="top"><img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/c94ea8b2-3073-4a5a-a2ef-01c03ea7816e" alt="kanugu rajesh" width=300 height=300></td>
