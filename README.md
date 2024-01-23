@@ -52,8 +52,6 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-05 050732](https://github.com/kanugurajesh/Career-Guide/assets/120458029/5f53a76e-56ba-4564-8968-81287fde8c03)
 
-![image-swap](https://github.com/kanugurajesh/Career-Guide/assets/77529419/68c41bb8-769c-4506-b5d3-e0953aab2783)
-
 ![Screenshot 2024-01-05 050747](https://github.com/kanugurajesh/Career-Guide/assets/120458029/2a8ae8b5-6e68-4aad-86e5-e939001ecae1)
 
 ![Screenshot 2024-01-05 050759](https://github.com/kanugurajesh/Career-Guide/assets/120458029/9f1360c8-448c-464b-b0cd-582b520e3072)
@@ -65,6 +63,8 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 ![Screenshot 2024-01-23 192205](https://github.com/kanugurajesh/Career-Guide/assets/77529419/c94ea8b2-3073-4a5a-a2ef-01c03ea7816e)
 
 ![Screenshot 2024-01-23 192226](https://github.com/kanugurajesh/Career-Guide/assets/77529419/fda257bd-b83f-4c2f-9096-de483167fa46)
+
+![image-swap](https://github.com/kanugurajesh/Career-Guide/assets/77529419/68c41bb8-769c-4506-b5d3-e0953aab2783)
 
 <div align=center>
   <img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/24e52300-427a-418a-98f4-9f77b3553ad1" alt="kanugu rajesh" width=300 height=300>
