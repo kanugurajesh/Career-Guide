@@ -60,17 +60,17 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-05 050837](https://github.com/kanugurajesh/Career-Guide/assets/120458029/557e0b90-fdbe-4826-8144-5c4b98dd9a62)
 
-![Screenshot 2024-01-23 192205](https://github.com/kanugurajesh/Career-Guide/assets/77529419/c94ea8b2-3073-4a5a-a2ef-01c03ea7816e)
-
-![Screenshot 2024-01-23 192226](https://github.com/kanugurajesh/Career-Guide/assets/77529419/fda257bd-b83f-4c2f-9096-de483167fa46)
-
-![image-swap](https://github.com/kanugurajesh/Career-Guide/assets/77529419/68c41bb8-769c-4506-b5d3-e0953aab2783)
-
-<div align=center>
-  <img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/24e52300-427a-418a-98f4-9f77b3553ad1" alt="kanugu rajesh" width=300 height=300>
-</div>
-
-![realistic](https://github.com/kanugurajesh/Career-Guide/assets/77529419/6f9dffcd-5a50-4a3e-b7bf-cb516a9b2286)
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/c94ea8b2-3073-4a5a-a2ef-01c03ea7816e" alt="kanugu rajesh" width=300 height=300></td>
+    <td valign="top"><img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/fda257bd-b83f-4c2f-9096-de483167fa46" alt="kanugu rajesh" width=300 height=300></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/68c41bb8-769c-4506-b5d3-e0953aab2783" alt="kanugu rajesh" width=300 height=300></td>
+    <td valign="top"><img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/24e52300-427a-418a-98f4-9f77b3553ad1" alt="kanugu rajesh" width=300 height=300></td>
+    <td valign="top"><img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/6f9dffcd-5a50-4a3e-b7bf-cb516a9b2286" alt="kanugu rajesh" width=300 height=300></td>
+  </tr>
+</table>
 
 ![Screenshot 2024-01-05 050846](https://github.com/kanugurajesh/Career-Guide/assets/120458029/0298d1ab-c821-4707-9c4b-1954f5d6cb06)
 
