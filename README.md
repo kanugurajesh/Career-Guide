@@ -52,6 +52,8 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-05 050732](https://github.com/kanugurajesh/Career-Guide/assets/120458029/5f53a76e-56ba-4564-8968-81287fde8c03)
 
+![image-swap](https://github.com/kanugurajesh/Career-Guide/assets/77529419/68c41bb8-769c-4506-b5d3-e0953aab2783)
+
 ![Screenshot 2024-01-05 050747](https://github.com/kanugurajesh/Career-Guide/assets/120458029/2a8ae8b5-6e68-4aad-86e5-e939001ecae1)
 
 ![Screenshot 2024-01-05 050759](https://github.com/kanugurajesh/Career-Guide/assets/120458029/9f1360c8-448c-464b-b0cd-582b520e3072)
