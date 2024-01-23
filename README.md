@@ -94,8 +94,10 @@ realistic, man, waist-up, tall, broad-shouldered, 35 years, haunted, tough, clea
 ![Screenshot 2024-01-05 050913](https://github.com/kanugurajesh/Career-Guide/assets/120458029/eee7478f-85cd-44a6-b86a-a97e8850956d)
 
 ## Demo
-### Click on the below image to see the video
-[![Career Aid](https://github.com/kanugurajesh/Student-LMS/assets/120458029/a29ab926-79ae-49dc-a681-7c64f931259b)](https://youtu.be/0xA9cpPkJ70)
+
+<a src="https://youtu.be/0xA9cpPkJ70">
+  <img src="https://github.com/kanugurajesh/Career-Guide/assets/77529419/789b6035-1da6-4da0-99e0-d2863cda3f0d" alt="career guide" width=400 height=300>
+</a>
 
 ## Contribution Guidelines
 
