@@ -34,7 +34,6 @@ export const POST = async (request: NextRequest) => {
 
     // @ts-ignore
     const image = imageGeneration[0];
-    // console.log(image);
 
     return NextResponse.json({ imageURl: image }, { status: 200 })
     // @ts-ignore

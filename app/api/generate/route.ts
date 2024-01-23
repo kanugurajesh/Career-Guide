@@ -34,8 +34,6 @@ export const POST = async (request: NextRequest) => {
     // @ts-ignore
     const image = imageGeneration[0];
 
-    // console.log(image);
-
     const SwapImage = await replicate.run(
         "yan-ops/face_swap:d5900f9ebed33e7ae08a07f17e0d98b4ebc68ab9528a70462afc3899cfe23bab",
         {
@@ -56,8 +54,6 @@ export const POST = async (request: NextRequest) => {
 
     // @ts-ignore
     const swapppedImage = SwapImage.image;
-
-    // console.log(swapppedImage);
 
     return NextResponse.json({ imageURl: swapppedImage }, { status: 200 })
 };

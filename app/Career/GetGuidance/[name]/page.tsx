@@ -29,7 +29,6 @@ export default function Page({ params }: { params: { name: string } }) {
         const data = await response.json();
 
         // get imageUrl from data
-        console.log(data.imageURl);
         setImage(data.imageURl);
         return data;
     }
