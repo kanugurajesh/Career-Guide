@@ -62,7 +62,7 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 <p>The following are the images related to the above imagine yourself app</p>
 
-1. The first image below is the resposne from the web when the image 4 and prompt which gives the image 5
+1. The first image below is the resposne from the web when the image 4 and prompt which gives the image 5 is given as input to the app
    
 ```bash
 realistic, man, waist-up, tall, broad-shouldered, 35 years, haunted, tough, clean-shaven, realistic dark blond hair, tired, focused realistic light gray eyes, solid black background, bodyguard, wearing gray T-shirt, no pockets
